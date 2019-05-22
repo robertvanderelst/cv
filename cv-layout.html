@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,900" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Merriweather", serif;
+            line-height: 1.33333;
+        }
+
+        body {
+            font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 400;
+            letter-spacing: -.025em;
+            display: grid;
+            padding: 4vw;
+            grid-gap: 4vw;
+            border-top: .5rem solid hsl(352, 64%, 32%);
+            background: hsl(0, 8%, 96%);
+            color: hsl(0, 8%, 24%);
+        }
+
+        h1,h2,h3,h4,dt {
+            font-family: "Merriweather Sans", serif;
+            letter-spacing: -.05rem;
+        }
+
+        h1 {
+            font-size: calc(28px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 900;
+        }
+
+        h2 {
+            font-size: calc(20px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 900;
+            border-bottom: 2px solid hsl(0, 8%, 24%);
+        }
+
+        h3 {
+            font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        header {
+        }
+
+        strong {
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 1px #fff;
+        }
+
+        strong:before {
+            content: "";
+            position: absolute;
+            left: -.125em;
+            right: -.125em;
+            bottom: 0;
+            height: .5em;
+            background: hsl(0, 8%, 80%);
+            z-index: -1;
+        }
+
+        @media (min-width: 64em) {
+            body {
+                grid-template-columns: 3fr 4fr 4fr;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <picture>
+            <img src="r-v3.svg" style="margin-top: -3vw">
+        </picture>
+
+        <h1>Testheader</h1>
+
+        <h2>Testheader</h2>
+
+        <h3>Testheader</h3>
+
+        <p style="margin-top: 1vw; font-size: calc(20px + 4 * ((100vw - 320px) / 1600));">Sinds 2017 langzaamaan begonnen met het ontwerpen van logo&rsquo;s, puur vanuit nieuwsgierigheid en een drang naar controle over vectoren</p>
+
+        <p style="margin-top: 1vw; font-size: calc(20px + 4 * ((100vw - 320px) / 1600)); font-weight: 300; letter-spacing: -.025em;">Sinds 2017 langzaamaan <strong>begonnen</strong> met het ontwerpen van logo&apos;s, puur vanuit nieuwsgierigheid en een drang naar controle over vectoren</p>
+
+        <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">E-mail</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <section>
+            <h2>Werkervaring</h2>
+        </section>
+
+        </section>
+    </main>
+
+    <div>
+        <section>
+            <h2>Skills</h2>
+
+            <h2>Soft skills</h2>
+            <dl>
+				<dt>Communicatief</dt>
+				<dd>Ik hou ervan zo beknopt, maar ook zo helder mogelijk te communiceren. Ik hou daarentegen niet van onnodige en overbodige meetings.</dd>
+				<dt>Leergierig</dt>
+				<dd>Ik ben lid van Fronteers en daardoor ook frequent bezoeker van meetings en conferenties. Daarnaast ben ik geabonneerd op wekelijkse e-mailnieuwsbrieven, zodat ik zelf het nieuws niet hoef te filteren.</dd>
+				<dt>Oplossingsgericht</dt>
+				<dd>Ik denk in oplossingen en als die niet praktisch of haalbaar zijn probeer ik in ieder geval een goede plan B te vinden.</dd>
+				<dt>Collegiaal</dt>
+				<dd>Ik help graag mensen, ook als het buiten mijn eigen vakgebied valt. Andere perspectieven brengen meestal ook nieuwe en soms ook betere inzichten.</dd>
+			</dl>
+
+        </section>
+
+        <section>
+            <h2>Ambities</h2>
+            <p>Alhoewel ik nu al meer dan vijftien jaar Front End Developer ben, wil ik graag breder kijken dan dat. Mijn interesse in design – van architectuur tot industrieel ontwerp – is de trigger geweest om me meer te verdiepen in UX/UI design, wat ik eigenlijk altijd al leuk vond om te zien en te lezen.</p>
+
+            <p>Het liefst zou ik me langzaam in die richting op willen bewegen, als een tussenschakel tussen design en techniek.</p>
+        </section>
+
+        <section>
+            <h2>Karakter</h2>
+            <p>Ik ben van nature een verbeteraar, in de zin dat ik een bestaand concept of product kan bekijken en aan kan geven waar ik verbeteringen zie. Ik ben ook een minimalist – in wording, het is een continu proces –; ik hou van simpele, elegante en doordachte oplossingen. Een kalm persoon, die wel weerwoord geeft en kritisch is waar nodig. Een open source aanhanger en overtuigd van het feit dat het internet voor iedereen zou moeten zijn.</p>
+        </section>
+    </div>
+</body>
+</html>
