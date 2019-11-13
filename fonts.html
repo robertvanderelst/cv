@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fonts</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,900" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Merriweather", serif;
+            line-height: 1.2;
+            /* color: hsl(32, 8%, 18%); */
+        }
+
+        * + * {
+            margin-top: 1vw;
+        }
+
+        li + li {
+            margin-top: 0;
+        }
+
+        body {
+            padding: 2vw;
+            /* background: hsl(32, 8%, 98%); */
+            font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+        }
+
+        main {
+            width: 100%;
+            max-width: 50ch;
+            margin: 0 auto;
+        }
+
+        h1 {
+
+
+        }
+
+        h2 {
+            font-size: calc(32px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 900;
+            letter-spacing: -.0675vw;
+        }
+
+        h2 + * {
+            margin-top: .25vw;
+        }
+
+        h3 {
+            font-size: calc(24px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 900;
+            letter-spacing: -.0675vw;
+        }
+
+        h3 + * {
+            margin-top: .25vw;
+        }
+
+        .intro {
+            font-size: calc(28px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 300;
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        ol li + li {
+            margin-top: 1vw;
+        }
+
+        date {
+            font-family: "Merriweather Sans", Georgia, serif;
+            font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
+            letter-spacing: -.03375vw;
+        }
+
+        li h3 {
+            font-size: calc(20px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 700;
+            letter-spacing: -.03375vw;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Robert van der Elst</h1>
+        <p class="intro">Sinds 2017 langzaamaan begonnen met het ontwerpen van logo’s, puur vanuit nieuwsgierigheid en een drang naar controle over vectoren</p>
+
+        <hr>
+
+        <h2>Communicatief</h2>
+        <p>Ik hou ervan zo beknopt, maar ook zo helder mogelijk te communiceren. Ik hou daarentegen niet van onnodige en overbodige meetings.</p>
+
+        <h3>Componenten</h3>
+        <p>Ik hou ervan zo beknopt, maar ook zo helder mogelijk te communiceren. Ik hou daarentegen niet van onnodige en overbodige meetings.</p>
+
+        <h2>Werkervaring</h2>
+
+        <ol>
+            <li>
+                <h3>Rietveld Licht &amp; Wonen</h3>
+                <date>juli 2015 &mdash; heden</date>
+
+
+            </li>
+        </ol>
+
+        <h3>Lijsten</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <dl>
+            <dt>Item 1</dt>
+            <dd>Info</dd>
+            <dt>Item 2</dt>
+            <dd>Info</dd>
+            <dt>Item 3</dt>
+            <dd>Info</dd>
+        </dl>
+
+    </main>
+</body>
+</html>
