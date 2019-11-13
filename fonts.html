@@ -57,7 +57,8 @@
             letter-spacing: -.0675vw;
         }
 
-        h3 + * {
+        h3 + *,
+        dt + * {
             margin-top: .25vw;
         }
 
@@ -84,7 +85,8 @@
             letter-spacing: -.03375vw;
         }
 
-        li h3 {
+        li h3,
+        dt {
             font-size: calc(20px + 4 * ((100vw - 320px) / 1600));
             font-weight: 700;
             letter-spacing: -.03375vw;
@@ -94,8 +96,9 @@
             opacity: .5;
         }
 
-        li p {
-            padding-left: 4vw;
+        li p,
+        dd {
+            padding-left: 12%;
         }
     </style>
 </head>
@@ -139,20 +142,15 @@
 
         <hr>
 
-        <h3>Lijsten</h3>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
+        <h2>Soft skills</h2>
 
         <dl>
-            <dt>Item 1</dt>
-            <dd>Info</dd>
-            <dt>Item 2</dt>
-            <dd>Info</dd>
-            <dt>Item 3</dt>
-            <dd>Info</dd>
+            <dt>Communicatief</dt>
+            <dd>Ik hou ervan zo beknopt, maar ook zo helder mogelijk te communiceren. Ik hou daarentegen niet van onnodige en overbodige meetings.</dd>
+            <dt>Leergierig</dt>
+            <dd>Ik ben lid van Fronteers en daardoor ook frequent bezoeker van meetings en conferenties. Daarnaast ben ik geabonneerd op wekelijkse e-mailnieuwsbrieven, zodat ik zelf het nieuws niet hoef te filteren.</dd>
+            <dt>Oplossingsgericht</dt>
+            <dd>Ik denk in oplossingen en als die niet praktisch of haalbaar zijn probeer ik in ieder geval een goede plan B te vinden.</dd>
         </dl>
 
     </main>
