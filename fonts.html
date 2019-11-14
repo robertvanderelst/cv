@@ -17,7 +17,7 @@
         }
 
         * + * {
-            margin-top: 1vw;
+            margin-top: calc(1rem + 1vw);
         }
 
         li + li {
@@ -48,7 +48,7 @@
         }
 
         h2 + * {
-            margin-top: .25vw;
+            margin-top: calc(.125rem + 1vw);
         }
 
         h3 {
@@ -58,17 +58,23 @@
         }
 
         h3 + *,
-        dt + * {
-            margin-top: .25vw;
+        dt + dd {
+            margin-top: calc(.25rem + 1vw);
         }
 
         .intro {
             font-size: calc(24px + 4 * ((100vw - 320px) / 1600));
             font-weight: 300;
+            line-height: 1.2;
         }
 
         hr {
-            margin: 2vw 0;
+            margin: calc(1rem + 1vw) 0;
+        }
+
+        p,
+        dd {
+            line-height: 1.33333;
         }
 
         ol {
@@ -76,7 +82,7 @@
         }
 
         ol li + li {
-            margin-top: 2vw;
+            margin-top: calc(1rem + 1vw);
         }
 
         date {
@@ -96,6 +102,10 @@
             opacity: .5;
         }
 
+        date + p {
+            margin-top: calc(.125rem + 1vw);
+        }
+
         li p,
         dd {
             padding-left: 12%;
@@ -104,7 +114,7 @@
 </head>
 <body>
     <main>
-        <h1>Robert van der Elst</h1>
+        <h1><img src="r-v3.svg" alt="Robert van der Elst"></h1>
         <p class="intro">Sinds 2017 langzaamaan begonnen met het ontwerpen van logo’s, puur vanuit nieuwsgierigheid en een drang naar controle over vectoren</p>
 
         <hr>
