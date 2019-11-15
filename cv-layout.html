@@ -15,6 +15,10 @@
             line-height: 1.33333;
         }
 
+        * + * {
+            margin-top: 2vw;
+        }
+
         body {
             font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
             font-weight: 400;
@@ -22,7 +26,9 @@
             display: grid;
             padding: 4vw;
             grid-gap: 4vw;
-            border-top: .5rem solid hsl(352, 64%, 32%);
+            /*border-top: .5rem solid hsl(352, 64%, 32%);*/
+            border-top: .5rem solid hsl(174, 72%, 34%);
+            border-top: .5rem solid hsl(156, 38%, 31%);
             background: hsl(0, 8%, 96%);
             color: hsl(0, 8%, 24%);
         }
@@ -33,21 +39,38 @@
         }
 
         h1 {
-            font-size: calc(28px + 4 * ((100vw - 320px) / 1600));
+            font-size: calc(32px + 4 * ((100vw - 320px) / 1600));
             font-weight: 900;
         }
 
         h2 {
-            font-size: calc(20px + 4 * ((100vw - 320px) / 1600));
+            font-size: calc(28px + 4 * ((100vw - 320px) / 1600));
             font-weight: 900;
             border-bottom: 2px solid hsl(0, 8%, 24%);
         }
 
-        h3 {
-            font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
+        h3,
+        date {
+            line-height: 1;
         }
 
-        ul {
+        h3,
+        dt {
+            font-size: calc(20px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 700;
+        }
+
+        dd {
+            margin-top: 0;
+        }
+
+        date {
+            font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
+            color: hsl(0, 8%, 44%);
+        }
+
+        ul,
+        ol {
             list-style: none;
         }
 
@@ -56,13 +79,17 @@
             width: 100%;
         }
 
+        a {
+            color: hsl(156, 38%, 31%);
+        }
+
         header {
         }
 
         strong {
             position: relative;
             z-index: 2;
-            text-shadow: 0 1px #fff;
+            text-shadow: 0 .0625rem #fff;
         }
 
         strong:before {
@@ -74,6 +101,19 @@
             height: .5em;
             background: hsl(0, 8%, 80%);
             z-index: -1;
+        }
+
+        li + li {
+            margin-top: 4vw;
+        }
+
+        header + div {
+            margin-top: 1vw;
+        }
+
+        li div,
+        dd {
+            padding-left: 4vw;
         }
 
         @media (min-width: 64em) {
@@ -90,15 +130,15 @@
             <img src="r-v3.svg" style="margin-top: -3vw" alt="Logo">
         </picture>
 
-        <h1>Testheader</h1>
+        <!-- <h1>Testheader</h1>
 
         <h2>Testheader</h2>
 
-        <h3>Testheader</h3>
+        <h3>Testheader</h3> -->
 
-        <p style="margin-top: 1vw; font-size: calc(20px + 4 * ((100vw - 320px) / 1600));">Sinds 2017 langzaamaan begonnen met het ontwerpen van logo&rsquo;s, puur vanuit nieuwsgierigheid en een drang naar controle over vectoren</p>
+        <!--<p style="margin-top: 1vw; font-size: calc(20px + 4 * ((100vw - 320px) / 1600));">Sinds 2017 langzaamaan begonnen met het ontwerpen van logo&rsquo;s, puur vanuit nieuwsgierigheid en een drang naar controle over vectoren</p>-->
 
-        <p style="margin-top: 1vw; font-size: calc(20px + 4 * ((100vw - 320px) / 1600)); font-weight: 300; letter-spacing: -.025em;">Sinds 2017 langzaamaan <strong>begonnen</strong> met het ontwerpen van logo&apos;s, puur vanuit nieuwsgierigheid en een drang naar controle over vectoren</p>
+        <p style="margin-top: 1vw; font-size: calc(20px + 4 * ((100vw - 320px) / 1600)); font-weight: 400; line-height: 1.2; letter-spacing: -.025em;color: hsl(352, 64%, 32%);">Sinds 2017 langzaamaan <strong>begonnen</strong> met het ontwerpen van logo&apos;s, puur vanuit nieuwsgierigheid en een drang naar controle over vectoren. fido, ffox</p>
 
         <ul>
             <li><a href="#">Twitter</a></li>
@@ -109,6 +149,70 @@
     <main>
         <section>
             <h2>Werkervaring</h2>
+
+            <ol>
+                <li>
+                    <header>
+                        <h3>Rietveld Licht & Wonen</h3>
+                        <date>juli 2015 &mdash; nu</date>
+                    </header>
+                    <div>
+                        <p>Front End Designer met meer UX / UI en design taken. Verantwoordelijk voor de continue verbetering van de eigen website.</p>
+                    </div>
+                </li>
+                <li>
+                    <header>
+                        <h3>Modern Media</h3>
+                        <date>januari 2013 &mdash; juni 2015</date>
+                    </header>
+                    <div>
+                        <p>Front End Developer in een klein team gespecialiseerd in vacaturesites voor grotere bedrijven, uitzend- en detacheringsbureaus en de automotive branche. Websites ontwikkeld voor o.a. Leaseplan, VGZ, Creyf&rsquo;s, LeaseOnline en Essentium, gebaseerd op Clixmaster Studio en Sitecore.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <header>
+                        <h3>SIMgroep</h3>
+                        <date>maart 2008 &mdash; december 2012</date>
+                    </header>
+                    <div>
+                        <p>Bij SIMgroep was ik &eacute;&eacute;n van de eerste Front End Developers en door een snelle groei tijdelijk tot teamleider benoemd. Dit bleek niet te combineren met het ontwikkelen van websites, dus heb ik uiteindelijk besloten om toch te blijven ontwikkelen. Ik heb me verdiept in de Webrichtlijnen en heb daar ook in ongeveer drie maanden het hele systeem verbouwd totdat deze compleet webrichtlijnen-proof was.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <header>
+                        <h3>Zinnebeeld</h3>
+                        <date>oktober 2007 &mdash; februari 2008</date>
+                    </header>
+                    <div>
+                        <p>Na een korte zoektocht ben ik beland bij het (toen nog) &eacute;&eacute;nmansbedrijf Zinnebeeld als Front End Developer, waar ik gewerkt heb voor o.a. Asoka en MEXX.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <header>
+                        <h3>Studio Dumbar</h3>
+                        <date>augustus &mdash; september 2007</date>
+                    </header>
+                    <div>
+                        <p>Via een open sollicitatie werd ik aangenomen als Junior Project Manager, zonder enige praktische ervaring. Ik leidde enkele (internationale) projecten en heb hierdoor ook veel ervaring opgedaan over de andere kant(en) van projecten.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <header>
+                        <h3>eFocus</h3>
+                        <date>mei 2006 &mdash; juli 2007</date>
+                    </header>
+                    <div>
+                        <p>Als Allround Web Developer bouwde ik HTML/CSS templates en gebruikte PHP om de data uit een CMS aan de templates te koppelen.</p>
+                        <p>Ik heb daar veel geleerd van PHP en SVN, maar ik heb me toch meer gefocust op Front End Development, omdat dat toch mijn sterkste kant is en daar mijn interesse ook ligt.</p>
+                    </div>
+                </li>
+            </ol>
+
+            <p>Daarvoor heb ik ook nog gewerkt bij <em>Zwiers Partners</em> en <em>Madocke Interactive media</em>.</p>
         </section>
 
         </section>
@@ -117,6 +221,7 @@
     <div>
         <section>
             <h2>Skills</h2>
+            <p>Nog uit te schrijven. O.a. <strong>HTML</strong>, <strong>CSS</strong></p>
 
             <h2>Soft skills</h2>
             <dl>
