@@ -44,7 +44,6 @@
         }
 
         main {
-            height: 100vh;
             padding: 4vw;
         }
 
@@ -71,11 +70,87 @@
         .has-grid {
             display: grid;
             grid-gap: 4vw;
+            grid-template-columns: 1fr;
         }
 
         .grid-centerall {
             justify-items: center;
             align-items: center;
+        }
+
+        h1 {
+
+
+        }
+
+        h2 {
+            font-size: calc(32px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 900;
+            letter-spacing: -.0675vw;
+        }
+
+        h2 + * {
+            margin-top: calc(.125rem + 1vw);
+        }
+
+        h3 {
+            font-size: calc(24px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 900;
+            letter-spacing: -.0675vw;
+        }
+
+        h3 + *,
+        dt + dd {
+            margin-top: calc(.25rem + 1vw);
+        }
+
+        .intro {
+            font-size: calc(24px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 300;
+            line-height: 1.2;
+        }
+
+        hr {
+            margin: calc(1rem + 1vw) 0;
+        }
+
+        p,
+        dd {
+            line-height: 1.33333;
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        ol li + li {
+            margin-top: calc(1rem + 1vw);
+        }
+
+        date {
+            font-family: "Merriweather Sans", Georgia, serif;
+            font-size: calc(12px + 4 * ((100vw - 320px) / 1600));
+            letter-spacing: -.03375vw;
+        }
+
+        li h3,
+        dt {
+            font-size: calc(20px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 700;
+            letter-spacing: -.03375vw;
+        }
+
+        li date {
+            opacity: .5;
+        }
+
+        date + p {
+            margin-top: calc(.125rem + 1vw);
+        }
+
+        li p,
+        dd {
+            padding-left: 12%;
         }
 
     </style>
@@ -98,6 +173,30 @@
     <main class="has-grid">
         <section>
             <h2>Werkervaring</h2>
+
+            <ol>
+                <li>
+                    <h3>Rietveld Licht &amp; Wonen</h3>
+                    <date>juli 2015 &mdash; heden</date>
+
+                    <p>Front End Designer met meer UX / UI en design taken. Verantwoordelijk voor de continue verbetering van de eigen website.</p>
+                </li>
+
+                <li>
+                    <h3>Rietveld Licht &amp; Wonen</h3>
+                    <date>juli 2015 &mdash; heden</date>
+
+                    <p>Front End Designer met meer UX / UI en design taken. Verantwoordelijk voor de continue verbetering van de eigen website.</p>
+                </li>
+
+                <li>
+                    <h3>Rietveld Licht &amp; Wonen</h3>
+                    <date>juli 2015 &mdash; heden</date>
+
+                    <p>Front End Designer met meer UX / UI en design taken. Verantwoordelijk voor de continue verbetering van de eigen website.</p>
+                </li>
+            </ol>
+
         </section>
         <section>
             <h2>Skills</h2>
