@@ -16,6 +16,7 @@
             font-display: swap;
             line-height: 1.2;
             /* color: hsl(32, 8%, 18%); */
+            box-sizing: border-box;
         }
 
         section * + * {
@@ -37,15 +38,13 @@
         }
 
         header {
-            height: 90vh;
-        }
-
-        header section {
-            padding: 4vw;
+            position: relative;
+            height: 80vh;
+            padding: 6vw;
         }
 
         main {
-            padding: 4vw;
+            padding: 6vw;
         }
 
         main {
@@ -154,6 +153,14 @@
             padding-left: 12%;
         }
 
+        header > svg {
+            position: absolute;
+            bottom: 4vw;
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(2rem + 2vw);
+        }
+
     </style>
 </head>
 <body>
@@ -169,6 +176,10 @@
                 </p>
             </div>
         </section>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 9">
+            <path d="M16 9L0 1l2-1 14 7 14-7 2 1z"/>
+        </svg>
     </header>
 
     <main class="has-grid">
