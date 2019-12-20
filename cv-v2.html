@@ -162,6 +162,25 @@
             left: 50%;
             transform: translateX(-50%);
             width: calc(2rem + 2vw);
+            -webkit-animation: 1s infinite bounce;
+                    animation: 1s infinite bounce;
+        }
+
+        @-webkit-keyframes bounce {
+            from {
+                bottom: 4vw;
+            }
+            to {
+                bottom: 2vw;
+            }
+        }
+        @-moz-keyframes bounce {
+            from {
+                bottom: 4vw;
+            }
+            to {
+                bottom: 2vw;
+            }
         }
 
         @media (min-width: 48rem) {
@@ -180,9 +199,12 @@
                     <img src="r-v3-d.svg" alt="Robert van der Elst">
                 </h1>
 
-                <p class="intro">
+                <!-- <p class="intro">
                     Ik ben een design technologist die het traject van prototyping, concepting en development naar HTML, CSS en Javascript heeft gecombineerd tot &eacute;&eacute;n workflow.
-                </p>
+                </p> -->
+
+                <p class="intro">
+                    Ik ben een design technologist die zijn concepten en prototypes direct in code vertaalt.
             </div>
         </section>
 
@@ -192,6 +214,14 @@
     </header>
 
     <main>
+        <section>
+            <ul>
+                <li><a href="mailto:mail@robertvanderelst.nl">E-mail</a></li>
+                <li><a href="https://www.twitter.com/rvanderelst">Twitter</a></li>
+                <li><a href="tel:+31648382300">Telefoon</a></li>
+                <li><a href="cv.pdf">Download CV</a></li>
+            </ul>
+        </section>
         <div class="has-grid">
             <section>
                 <h2>Werkervaring</h2>
