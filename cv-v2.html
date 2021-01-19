@@ -19,14 +19,6 @@
             box-sizing: border-box;
         }
 
-        section * + * {
-            margin-top: calc(1rem + 2vw);
-        }
-
-        li + li {
-            margin-top: 0;
-        }
-
         body {
             font-size: calc(16px + 4 * ((100vw - 320px) / 1600));
         }
@@ -112,6 +104,26 @@
             margin: 0 auto;
         }
 
+        h2 {
+            font-size: calc(32px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 900;
+            letter-spacing: -.0675vw;
+        }
+
+        h2 + * {
+            margin-top: calc(1rem + 2vw);
+        }
+
+        h3 {
+            font-size: calc(24px + 4 * ((100vw - 320px) / 1600));
+            font-weight: 900;
+            letter-spacing: -.0675vw;
+        }
+
+        h3 + * {
+            margin-top: calc(1rem + 2vw);
+        }
+
         .intro {
             font-size: calc(24px + 4 * ((100vw - 320px) / 1600));
             font-weight: 300;
@@ -177,30 +189,7 @@
             background: #fcc;
         }
 
-        h1 {
 
-
-        }
-
-        h2 {
-            font-size: calc(32px + 4 * ((100vw - 320px) / 1600));
-            font-weight: 900;
-            letter-spacing: -.0675vw;
-        }
-
-        h2 + * {
-            margin-top: calc(1rem + 2vw);
-        }
-
-        h3 {
-            font-size: calc(24px + 4 * ((100vw - 320px) / 1600));
-            font-weight: 900;
-            letter-spacing: -.0675vw;
-        }
-
-        h3 + * {
-            margin-top: calc(1rem + 2vw);
-        }
 
         .intro {
             font-size: calc(24px + 4 * ((100vw - 320px) / 1600));
