@@ -7,6 +7,94 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Robert van der Elst - Curriculum Vitae</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Merriweather Sans", Arial, sans-serif;
+            font-display: swap;
+            line-height: 1.5;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        body {
+            font-size: 100%;
+        }
+
+        header,
+        main section,
+        footer {
+            padding: 8vw;
+        }
+
+        main section,
+        footer {
+            background: hsl(16, 2%, 24%);
+            color: #fff;
+            font-weight: 300;
+        }
+
+        main section:nth-child(even) {
+            background: hsl(16, 4%, 98%);
+            color: #000;
+        }
+
+        /* LAYOUT */
+        .l-grid {
+            display: grid;
+            gap: 8vw;
+        }
+
+        @media (min-width: 48em) {
+            .l-grid {
+                grid-template-columns: 10fr 16fr
+            }
+
+            .l-grid-reverse {
+                grid-template-columns: 16fr 10fr
+            }
+
+            .l-grid-header {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* ELEMENTS */
+        .u-lobowl > * + * {
+            margin-top: 1.5em;
+        }
+
+        h2 {
+            font-size: calc(1.5em + .5vw);
+        }
+
+        h2 + div {
+            margin-top: 2vw;
+        }
+
+        h3 {
+            font-size: calc(1.2em + .5vw)
+        }
+
+        h3 ~ h3 {
+            margin-top: 2vw;
+        }
+
+        p {
+            font-size: calc(.9em + .5vw);
+            font-weight: 300;
+        }
+
+        .date {
+            font-size: calc(.65em + .5vw);
+            color: hsl(16, 2%, 32%);
+        }
+
+        header picture {
+            align-self: center;
+        }
+    </style>
 </head>
 <body>
     <header class="l-grid l-grid-header">
@@ -103,93 +191,5 @@
     </footer>
 
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;800&display=swap" rel="stylesheet">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            font-family: "Merriweather Sans", Arial, sans-serif;
-            font-display: swap;
-            line-height: 1.5;
-            box-sizing: border-box;
-            position: relative;
-        }
-
-        body {
-            font-size: 100%;
-        }
-
-        header,
-        main section,
-        footer {
-            padding: 8vw;
-        }
-
-        main section,
-        footer {
-            background: hsl(16, 2%, 24%);
-            color: #fff;
-            font-weight: 300;
-        }
-
-        main section:nth-child(even) {
-            background: hsl(16, 4%, 98%);
-            color: #000;
-        }
-
-        /* LAYOUT */
-        .l-grid {
-            display: grid;
-            gap: 8vw;
-        }
-
-        @media (min-width: 48em) {
-            .l-grid {
-                grid-template-columns: 10fr 16fr
-            }
-
-            .l-grid-reverse {
-                grid-template-columns: 16fr 10fr
-            }
-
-            .l-grid-header {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        /* ELEMENTS */
-        .u-lobowl > * + * {
-            margin-top: 1.5em;
-        }
-
-        h2 {
-            font-size: calc(1.5em + .5vw);
-        }
-
-        h2 + div {
-            margin-top: 2vw;
-        }
-
-        h3 {
-            font-size: calc(1.2em + .5vw)
-        }
-
-        h3 ~ h3 {
-            margin-top: 2vw;
-        }
-
-        p {
-            font-size: calc(.9em + .5vw);
-            font-weight: 300;
-        }
-
-        .date {
-            font-size: calc(.65em + .5vw);
-            color: hsl(16, 2%, 32%);
-        }
-
-        header picture {
-            align-self: center;
-        }
-    </style>
 </body>
 </html>
