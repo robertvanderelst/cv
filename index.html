@@ -195,12 +195,21 @@
         .contact-label {
             font-size: calc(.65em + .5vw);
             color: hsl(16, 4%, 98%);
+            visibility: hidden;
+            overflow: hidden;
+            clip:rect(0,0,0,0);
         }
 
         @media (min-width: 30em) {
             footer a {
                 width: auto;
                 height: auto;
+            }
+
+            .contact-label {
+                visibility: visible;
+                clip: auto;
+                width: 7em;
             }
         }
 
