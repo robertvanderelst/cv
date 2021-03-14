@@ -193,11 +193,9 @@
         }
 
         .contact-label {
+            display: none;
             font-size: calc(.65em + .5vw);
             color: hsl(16, 4%, 98%);
-            visibility: hidden;
-            overflow: hidden;
-            clip:rect(0,0,0,0);
         }
 
         @media (min-width: 30em) {
@@ -207,8 +205,7 @@
             }
 
             .contact-label {
-                visibility: visible;
-                clip: auto;
+                display: block;
                 width: 7em;
             }
         }
