@@ -24,11 +24,12 @@
 
     <style>
         @font-face {
-            font-family: 'Merriweather Sans';
-            src: url('MerriweatherSans-VariableFont_wght.ttf') format('ttf');
-            font-weight: 300 800;
-            font-display: swap;
-        }
+            font-family: "Merriweather Sans";
+                src: url("MerriweatherSans-Regular.woff2") format("woff2 supports variations"),
+                     url("MerriweatherSans-Regular.woff2") format('2off2-variations');
+                font-weight: 100 900;
+                font-display: swap;
+            }
 
         * {
             padding: 0;
@@ -42,6 +43,7 @@
         body {
             font-size: 100%;
             font-weight: 300;
+            color: hsl(16, 2%, 24%);
         }
 
         header,
@@ -58,7 +60,7 @@
 
         main section:nth-child(even) {
             background: hsl(16, 4%, 98%);
-            color: #000;
+            color: hsl(16, 2%, 24%);
         }
 
         /* LAYOUT */
@@ -108,12 +110,12 @@
 
         p {
             font-size: calc(.9em + .5vw);
-            font-weight: 300;
         }
 
         .intro {
             font-size: calc(1.5em + 1.5vw);
             line-height: 1.2;
+            color: #000;
             letter-spacing: -0.0625em;
         }
 
