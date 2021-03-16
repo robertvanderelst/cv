@@ -194,9 +194,16 @@
         }
 
         .contact-label {
-            display: none;
             font-size: calc(.65em + .5vw);
             color: hsl(16, 4%, 98%);
+
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
         }
 
         @media (min-width: 30em) {
@@ -206,7 +213,12 @@
             }
 
             .contact-label {
-                display: block;
+                clip: none;
+                clip-path: none;
+                height: auto;
+                overflow: hidden;
+                position: static;
+                white-space: nowrap;
                 width: 7em;
             }
         }
